@@ -13,7 +13,14 @@ struct Cli {
 fn main() {
     let args = Cli::parse();
     match &args.day[..] {
-        "1" => day1(&args.path),
+        "1" => {
+            println!("Answers for Day 1");
+            day1(&args.path);
+        }
+        "2" => {
+            println!("Answers for Day 2");
+            day2(&args.path);
+        }
         _ => println!("Either invalid input or day isn't available yet"),
     }
 }
